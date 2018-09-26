@@ -1,1 +1,3 @@
 # vanillaJavascript
+
+Javascriptiä ilman kirjastoa

@@ -19,7 +19,7 @@ function moi() {
       if (err !== null) {
         alert("Something went wrong: " + err);
       } else {
-        request_handler(data)
+        request_ok(data)
       }
     });
   } else {
