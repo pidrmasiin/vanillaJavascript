@@ -15,7 +15,7 @@ var getJSON = function(url, callback) {
 
 function moi() {
   if (window.location.hostname !== "localhost") {
-    getJSON(window.location.hostname + "/api/questions", function(err, data) {
+    getJSON( "https://vanillatesting.herokuapp.com/api/questions", function(err, data) {
       if (err !== null) {
         alert("Something went wrong: " + err);
       } else {
@@ -35,7 +35,7 @@ function moi() {
 
 function answerInTheDB() {
   if (window.location.hostname !== "localhost") {
-    getJSON(window.location.hostname + "/api/questions", function(err, data) {
+    getJSON( "https://vanillatesting.herokuapp.com/api/questions", function(err, data) {
       if (err !== null) {
         alert("Something went wrong: " + err);
       } else {
@@ -71,7 +71,7 @@ onsubmit = function(e) {
     if (window.location.hostname === "localhost") {
       xhr.open("PUT", "http://localhost:3003/api/questions/5ba8f768c2ef1c3d0e61d89e", true);
     } else {
-      xhr.open("PUT", window.location.hostname + "/api/questions/5ba8f768c2ef1c3d0e61d89e", true);
+      xhr.open("PUT", "https://vanillatesting.herokuapp.com/api/questions/5ba8f768c2ef1c3d0e61d89e", true);
     }
 
     data = {
