@@ -1,0 +1,9 @@
+{
+ question: String,
+ answer: String,
+ synonyms: [],
+ altAnswers: [],
+ time: Date,
+ wordsInQuestion: [],
+ user: id,
+}

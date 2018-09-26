@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>Funny</title>
+</head>
+
+<body style="background-color: #e6e6ff">
+
+    <div class="grid-container">
+        <div class="item1">
+            <h1 style="padding-bottom: 2em,; font-style: oblique;">Frontend ilman kirjastoja</h1>
+        </div>
+        <div class="item2" id="item2">
+            <button type="button" class="button" onclick="load_content('home.html')">
+                Home</button>
+            <br />
+            <button type="button" class="button" onclick="load_content('get_data.html')">
+                Get data</button>
+        </div>
+        <div class="item3" id="item3">
+                <iframe src='home.html' width="300" height="300" scrolling="no" frameBorder="0" id="iframe1">Browser not compatible.</iframe>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script>
+        function load_content(htmldoc) {
+            document.getElementById('iframe1').src = htmldoc;
+        }
+    </script>
+</body>
+
+</html>
